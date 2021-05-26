@@ -1,0 +1,149 @@
+/*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
+
+
+@media screen and (max-width: 1200px) {
+  .banner img {
+    width: 535px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .row {
+    padding: 0;
+  }
+  .banner img {
+    width: 400px;
+  }
+}
+/* (min-width: 768px) */
+@media screen and (max-width: 991px) {
+
+  nav li {
+    padding: 0 1.2rem;
+  }
+
+  .banner .col-md-4 h1 {
+    font-size: 2.6rem;
+  }
+
+  .banner span {
+    font-size: 1.8rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .banner h1 {
+    font-size: 3.8rem;
+  }
+
+}
+
+
+
+
+/* (min-width: 400px) */
+@media screen and (max-width: 767px) {
+
+  header .row {
+    position: relative;
+  }
+
+  .toggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    right: 0;
+    z-index: 20;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .spinner {
+    background: whitesmoke;
+    height: 3px;
+    width: 30px;
+  }
+
+  .gap {
+    margin-bottom: 4px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  nav ul {
+    position: fixed;
+    justify-content: space-around;
+    flex-direction: column;
+    transition: ease-in-out .4s;
+    top: -300px;
+    right: 50px;
+    background-color: teal;
+    width: 200px;
+    height: 260px;
+  }
+
+  #sideBarToggle:checked ~ nav ul {
+    top: 90px;
+  }
+
+  nav ul li {
+    border-bottom: 1px dotted whitesmoke;
+    align-self: center;
+  }
+
+
+  .banner .row {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .banner h1 {
+    font-size: 3.6rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .banner img, .hosting img {
+    width: 90%;
+  }
+
+  .contact input {
+    width: 18rem;
+  }
+
+  .contact input {
+    padding: 1rem 5rem;
+    padding-left: 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+
+/* (min-width: 1px) */
+
+@media screen and (max-width: 399px) {
+
+  .btn {
+    font-size: .9rem;
+    padding: 0.7rem 2rem;
+  }
+
+  :is(.col-md-6, .contact-content) p {
+    width: 100%;
+  }
+}

@@ -460,10 +460,6 @@ Contact Area
   font-size: 1.1rem;
 }
 
-.contact textarea::placeholder {
-  display: none;
-  margin-top: 1rem;
-}
 
 .contact button {
   border: 0;

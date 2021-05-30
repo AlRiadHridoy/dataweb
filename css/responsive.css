@@ -1,6 +1,5 @@
 /*--------------------------------------------------------------------- File Name: responsive.css ---------------------------------------------------------------------*/
 
-
 @media screen and (max-width: 1200px) {
   .banner img {
     width: 535px;
@@ -17,7 +16,6 @@
 }
 /* (min-width: 768px) */
 @media screen and (max-width: 991px) {
-
   nav li {
     padding: 0 1.2rem;
   }
@@ -38,15 +36,10 @@
   .banner h1 {
     font-size: 3.8rem;
   }
-
 }
-
-
-
 
 /* (min-width: 400px) */
 @media screen and (max-width: 767px) {
-
   header .row {
     position: relative;
   }
@@ -68,7 +61,7 @@
     background: whitesmoke;
     height: 3px;
     width: 30px;
-    transition: ease-in-out .2s;
+    transition: ease-in-out 0.25s;
   }
 
   :is(.top, .middle) {
@@ -77,15 +70,14 @@
 
   nav {
     position: relative;
-
   }
 
   nav ul {
-    padding: 0 .3rem;
+    padding: 0 0.3rem;
     position: fixed;
     justify-content: space-around;
     flex-direction: column;
-    transition: ease-in-out .4s;
+    transition: ease-in-out 0.4s;
     top: 85px;
     right: -200px;
     background-color: #41468b;
@@ -103,7 +95,7 @@
 
   #sideBarToggle:checked ~ .toggle > .spinner.top {
     transform: rotate(135deg);
-    margin-top: 8px;
+    margin-top: 9px;
   }
 
   #sideBarToggle:checked ~ .toggle > .spinner.bottom {
@@ -111,18 +103,16 @@
     margin-top: -14px;
   }
 
-
   nav li {
     display: flex;
     justify-content: center;
-    border-bottom: .5px solid rgba(255, 255, 255, 0.096);
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.096);
     width: 100%;
   }
 
   nav a {
     font-size: 1.1rem;
   }
-
 
   .banner .row {
     flex-direction: column;
@@ -137,8 +127,9 @@
     font-size: 1rem;
     font-weight: 400;
   }
-  
-  .banner img, .hosting img {
+
+  .banner img,
+  .hosting img {
     width: 90%;
   }
 
@@ -154,16 +145,11 @@
   }
 }
 
-
-
-
-
 /* (min-width: 1px) */
 
 @media screen and (max-width: 399px) {
-
   .btn {
-    font-size: .9rem;
+    font-size: 0.9rem;
     padding: 0.7rem 2rem;
   }
 
@@ -176,6 +162,6 @@
   }
 
   .contact form {
-    font-size: .3rem;
+    font-size: 0.3rem;
   }
 }

@@ -78,7 +78,6 @@ Header Area
 header {
   background-color: #0c0f38;
   padding: 2.5rem 1rem;
-  position: fixed;
 }
 
 header .row {
